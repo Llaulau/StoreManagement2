@@ -12,8 +12,13 @@
 		66335F3E236A11CA00878FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66335F3C236A11CA00878FEF /* Main.storyboard */; };
 		66335F40236A11CD00878FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66335F3F236A11CD00878FEF /* Assets.xcassets */; };
 		66335F43236A11CD00878FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66335F41236A11CD00878FEF /* LaunchScreen.storyboard */; };
+		668FE5102383139B00E8B3CC /* ProvidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668FE50F2383139B00E8B3CC /* ProvidersViewController.swift */; };
+		668FE512238324BD00E8B3CC /* ProviderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668FE511238324BD00E8B3CC /* ProviderTableViewCell.swift */; };
+		668FE51423832D5100E8B3CC /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668FE51323832D5100E8B3CC /* ProviderViewController.swift */; };
 		66B471A2237339FE001C2264 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B471A1237339FE001C2264 /* ProductsTableViewController.swift */; };
 		66B471A423733F92001C2264 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B471A323733F92001C2264 /* Product.swift */; };
+		66DB45FB2379DF0E00454202 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DB45FA2379DF0E00454202 /* ProductViewController.swift */; };
+		66E52AB9237C98DB004979EE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E52AB8237C98DB004979EE /* Provider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +29,13 @@
 		66335F3F236A11CD00878FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66335F42236A11CD00878FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66335F44236A11CD00878FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668FE50F2383139B00E8B3CC /* ProvidersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersViewController.swift; sourceTree = "<group>"; };
+		668FE511238324BD00E8B3CC /* ProviderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTableViewCell.swift; sourceTree = "<group>"; };
+		668FE51323832D5100E8B3CC /* ProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 		66B471A1237339FE001C2264 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		66B471A323733F92001C2264 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		66DB45FA2379DF0E00454202 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		66E52AB8237C98DB004979EE /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				66335F44236A11CD00878FEF /* Info.plist */,
 				66B471A1237339FE001C2264 /* ProductsTableViewController.swift */,
 				66B471A323733F92001C2264 /* Product.swift */,
+				66E52AB8237C98DB004979EE /* Provider.swift */,
+				66DB45FA2379DF0E00454202 /* ProductViewController.swift */,
+				668FE50F2383139B00E8B3CC /* ProvidersViewController.swift */,
+				668FE511238324BD00E8B3CC /* ProviderTableViewCell.swift */,
+				668FE51323832D5100E8B3CC /* ProviderViewController.swift */,
 			);
 			path = StoreManagement;
 			sourceTree = "<group>";
@@ -144,6 +159,11 @@
 				66335F3B236A11CA00878FEF /* ViewController.swift in Sources */,
 				66B471A423733F92001C2264 /* Product.swift in Sources */,
 				66B471A2237339FE001C2264 /* ProductsTableViewController.swift in Sources */,
+				668FE5102383139B00E8B3CC /* ProvidersViewController.swift in Sources */,
+				668FE512238324BD00E8B3CC /* ProviderTableViewCell.swift in Sources */,
+				66DB45FB2379DF0E00454202 /* ProductViewController.swift in Sources */,
+				668FE51423832D5100E8B3CC /* ProviderViewController.swift in Sources */,
+				66E52AB9237C98DB004979EE /* Provider.swift in Sources */,
 				66335F39236A11CA00878FEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
