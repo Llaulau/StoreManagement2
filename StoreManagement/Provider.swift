@@ -10,9 +10,9 @@ import Foundation
 
 class Provider {
     var companyName: String!
-    var email: String
-    var address: String
-    var telephone: String
+    var email: String!
+    var address: String!
+    var telephone: String!
     
     init(company companyName: String, email: String, address: String, telephone: String) {
         self.companyName = companyName

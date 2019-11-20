@@ -14,7 +14,9 @@ class ProvidersViewController: UIViewController, UITableViewDelegate, UITableVie
     var providers = [Provider]()
     
     func generateProviders() {
-        providers.append(Provider(company: "UBS", email: "contact@ubs.com", address: "Bahnofstresse 6, Zurich", telephone: "058423456"))
+        providers.append(Provider(company: "UBS", email: "contact@ubs.com", address: "Bahnofstrasse 6, Zurich", telephone: "058423456"))
+        providers.append(Provider(company: "Migros", email: "contact@migros.com", address: "Rue de Lausanne 19, Genève", telephone: "0224324565"))
+        providers.append(Provider(company: "Raiffeisen", email: "contact@raiffeisen.com", address: "Bahnofstrasse 6, Basel", telephone: "0763456576"))
     }
 
     override func viewDidLoad() {
@@ -37,19 +39,31 @@ class ProvidersViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "providerCellIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "providerCellIdentifier", for: indexPath) as? ProviderTableViewCell
         
         let provider = providers[indexPath.row]
         // Configure the cell...
         
-        cell.textLabel?.text = provider.companyName
-        cell.detailTextLabel?.text = "\(provider.email)"
-        cell.textLabel?.text = provider.address
-        cell.textLabel?.text = provider.telephone
+        cell?.companyName?.text = provider.companyName
+        cell?.email?.text = provider.email
+        cell?.telephone?.text = provider.address
+        cell?.address?.text = provider.telephone
         
-        return cell
+        return cell!
     }
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // return CGFloat(indexPath.row * 20)
+        return 150.0
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                // let providerToDelete = providers[indexPath.row]
+                providers.remove(at: indexPath.row)
+                tableView.reloadData()
+            }
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

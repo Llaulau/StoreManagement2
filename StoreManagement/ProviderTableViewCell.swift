@@ -9,7 +9,15 @@
 import UIKit
 
 class ProviderTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var companyName: UILabel!
+    
+    @IBOutlet weak var email: UILabel!
+    
+    @IBOutlet weak var telephone: UILabel!
+    
+    @IBOutlet weak var address: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
